@@ -6,7 +6,7 @@ import sqlite3
 class EmployeeManagementApp:
     def __init__(self, master):
         self.master = master  # Создание переменной, которая будет содержать главное окно приложения
-        self.master.title("Employee Management App")  # Задание заголовка окна  
+        self.master.title("Список сотрудников компании")  # Задание заголовка окна  
 
         self.conn = sqlite3.connect("employees.db")
         self.create_table()
